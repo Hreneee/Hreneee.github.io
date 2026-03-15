@@ -1,0 +1,55 @@
+Create a high-fidelity portfolio landing page design for a graduate researcher named Irene Huang.
+
+Design style:
+- Light theme
+- Elegant and modern
+- Purple accent color palette
+- Clean academic / research aesthetic
+- Minimal but immersive
+- Subtle motion-friendly layout (for later animation in code)
+
+Primary colors:
+- Background: soft white or light gray
+- Accent: purple (#6B5CFF or similar)
+- Soft secondary lavender tones
+- Dark neutral text
+
+Typography:
+- Headings: modern geometric sans-serif (Inter Tight or similar)
+- Body: Inter / clean readable sans-serif
+
+Layout:
+Responsive design with generous whitespace and strong hierarchy.
+
+Navbar:
+Left:
+Name or logo: "Irene Huang"
+
+Right navigation:
+About
+Research
+Projects
+Experience
+Notes
+Contact
+
+Add a subtle purple hover underline animation for navigation links.
+
+Hero Section Content:
+
+Name:
+Irene Huang
+
+Call to action buttons:
+Primary: View Research
+Secondary: View Projects
+
+Visual design for hero:
+Use a soft animated-style background concept suitable for future motion:
+- subtle gradient mesh
+- faint abstract network/data visualization lines
+- light purple glow elements
+
+The design should feel academic, thoughtful, and modern rather than like a startup product landing page.
+
+Ensure spacing and layout are clean and ready for conversion into a static React + Tailwind portfolio site.
