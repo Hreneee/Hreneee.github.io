@@ -68,7 +68,7 @@ export function Contact() {
             </div>
 
             <a 
-              href="./Irene_Huang_MBA_CS_SQL_AI.pdf"
+              href="./Irene_Huang_MBA_CS_SQL_AI_ML.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-[#6B5CFF] hover:bg-[#5244e0] text-white px-8 py-4 rounded-xl font-['Inter'] font-medium transition-all shadow-md shadow-[#6B5CFF]/20 hover:shadow-lg hover:shadow-[#6B5CFF]/30 w-full sm:w-auto"
