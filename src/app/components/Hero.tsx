@@ -50,7 +50,7 @@ function OrbitalDot({
 
 export function Hero() {
   const planetImgUrl =
-    "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/600px-FullMoon2010.jpg";
+    "https://commons.wikimedia.org/wiki/File:FullMoon2010.jpg";
 
   return (
     <section className="relative min-h-screen flex items-center px-6 pt-32 pb-16 md:px-12 overflow-hidden">
