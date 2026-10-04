@@ -1,3 +1,91 @@
-@import './fonts.css';
-@import './tailwind.css';
-@import './theme.css';
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap");
+@import "tailwindcss" source(none);
+
+@source "../**/*.{js,ts,jsx,tsx}";
+
+@theme inline {
+  --font-sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-serif: "Instrument Serif", serif;
+
+  --color-background: #ffffff;
+  --color-foreground: #000000;
+  --color-primary: #e61937;
+  --color-secondary: #6b21a8;
+  --color-border: #000000;
+}
+
+@layer base {
+  :root {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+  }
+
+  html {
+    background: #ffffff;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    min-width: 320px;
+    background: #ffffff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-serif);
+    font-weight: 500;
+  }
+
+  p {
+    line-height: 1.6;
+  }
+
+  :where(a, button, [tabindex]):focus-visible {
+    outline: 3px solid var(--color-primary);
+    outline-offset: 4px;
+  }
+}
+
+@layer components {
+  .detail-label {
+    color: #262626;
+    font-family: var(--font-sans);
+    font-weight: 700;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .skill-icon-body {
+    will-change: transform;
+    touch-action: none;
+    user-select: none;
+  }
+
+  .skill-icon-body img {
+    pointer-events: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

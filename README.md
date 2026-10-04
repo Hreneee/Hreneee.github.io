@@ -1,11 +1,18 @@
+# Irene Huang Portfolio
 
-  # Static Portfolio Deployment
+A static portfolio built with Vite, React, and TypeScript and deployed to GitHub Pages.
 
-  This is a code bundle for Static Portfolio Deployment.
+## Local Development
 
-  ## Running the code
+```bash
+npm install
+npm run dev
+```
 
-  Run `npm i` to install the dependencies.
+## Production Build
 
-  Run `npm run dev` to start the development server.
-  
+```bash
+npm run build
+```
+
+Pushes to `main` are built and deployed through the GitHub Pages workflow in `.github/workflows/deploy.yml`.
