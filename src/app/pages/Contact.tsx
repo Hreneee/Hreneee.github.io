@@ -5,7 +5,12 @@ const contactLinks = [
   { label: "Email", href: "mailto:irene.huang.227q@gmail.com", color: "hover:text-primary" },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/i-huang/", color: "hover:text-secondary" },
   { label: "GitHub", href: "https://github.com/Hreneee", color: "hover:text-primary" },
-  { label: "Resume", href: "/documents/irene-huang-computational-research-resume.pdf", color: "hover:text-secondary" },
+  {
+    label: "Curriculum Vitae",
+    href: "/documents/irene-huang-cv.pdf",
+    color: "hover:text-secondary",
+    openInNewTab: true,
+  },
 ];
 
 export default function Contact() {
@@ -23,17 +28,18 @@ export default function Contact() {
         <div className="flex flex-col gap-6 font-serif text-2xl italic">
           {contactLinks.map((link) => {
             const external = link.href.startsWith("http");
+            const opensInNewTab = external || link.openInNewTab;
 
             return (
               <a
                 key={link.label}
                 href={link.href}
-                target={external ? "_blank" : undefined}
-                rel={external ? "noopener noreferrer" : undefined}
+                target={opensInNewTab ? "_blank" : undefined}
+                rel={opensInNewTab ? "noopener noreferrer" : undefined}
                 className={`group flex w-max items-center gap-2 transition-all hover:translate-x-2 ${link.color}`}
               >
                 {link.label}
-                {external && <span className="sr-only"> (opens in a new tab)</span>}
+                {opensInNewTab && <span className="sr-only"> (opens in a new tab)</span>}
                 <ArrowUpRight className="h-5 w-5 -translate-x-4 opacity-0 transition-all group-hover:translate-x-0 group-hover:opacity-100 group-focus-visible:translate-x-0 group-focus-visible:opacity-100" />
               </a>
             );
