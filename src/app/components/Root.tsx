@@ -47,36 +47,38 @@ export function Root() {
         Skip to main content
       </a>
 
-      <header className="fixed left-0 top-0 z-50 flex w-full flex-col justify-between gap-4 border-b border-black bg-white/90 px-6 py-4 backdrop-blur-md transition-all md:h-20 md:flex-row md:items-center md:gap-0 md:px-12">
-        <h1 className="font-serif text-2xl italic tracking-tight">
-          <NavLink
-            to="/"
-            aria-label="Irene Huang, home"
-            className="transition-colors hover:text-primary focus-visible:text-primary"
-          >
-            Irene Huang
-          </NavLink>
-        </h1>
-
-        <nav aria-label="Primary navigation" className="no-scrollbar flex items-center gap-6 overflow-x-auto pb-1 md:gap-8 md:pb-0">
-          {navItems.map((item) => (
+      <header className="fixed left-0 top-0 z-50 w-full border-b border-black bg-white/90 backdrop-blur-md transition-all">
+        <div className="mx-auto flex w-full max-w-[1440px] flex-col justify-between gap-4 px-6 py-4 md:h-20 md:flex-row md:items-center md:gap-0 md:px-12 lg:px-16 xl:px-20">
+          <h1 className="font-serif text-2xl italic tracking-tight">
             <NavLink
-              key={item.path}
-              to={item.path}
-              end={item.path === "/"}
-              className={({ isActive }) =>
-                cn(
-                  "whitespace-nowrap border-b-2 py-1 text-sm font-medium transition-colors",
-                  isActive
-                    ? "border-black text-black"
-                    : "border-transparent text-neutral-500 hover:border-neutral-300 hover:text-black",
-                )
-              }
+              to="/"
+              aria-label="Irene Huang, home"
+              className="transition-colors hover:text-primary focus-visible:text-primary"
             >
-              {item.label}
+              Irene Huang
             </NavLink>
-          ))}
-        </nav>
+          </h1>
+
+          <nav aria-label="Primary navigation" className="no-scrollbar flex items-center gap-6 overflow-x-auto pb-1 md:gap-8 md:pb-0">
+            {navItems.map((item) => (
+              <NavLink
+                key={item.path}
+                to={item.path}
+                end={item.path === "/"}
+                className={({ isActive }) =>
+                  cn(
+                    "whitespace-nowrap border-b-2 py-1 text-sm font-medium transition-colors",
+                    isActive
+                      ? "border-black text-black"
+                      : "border-transparent text-neutral-500 hover:border-neutral-300 hover:text-black",
+                  )
+                }
+              >
+                {item.label}
+              </NavLink>
+            ))}
+          </nav>
+        </div>
       </header>
 
       <main
@@ -85,7 +87,7 @@ export function Root() {
         tabIndex={-1}
         className="relative min-h-[100dvh] flex-1 pt-32 outline-none md:pt-32"
       >
-        <div className="w-full max-w-6xl px-6 md:px-20 lg:px-24">
+        <div className="mx-auto w-full max-w-[1440px] px-6 md:px-12 lg:px-16 xl:px-20">
           <Outlet />
         </div>
       </main>

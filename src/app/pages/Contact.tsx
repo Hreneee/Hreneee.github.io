@@ -20,7 +20,7 @@ export default function Contact() {
     <motion.div
       initial={reduceMotion ? false : { opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
-      className="space-y-16"
+      className="max-w-3xl space-y-16"
     >
       <section className="space-y-8">
         <h2 className="inline-block border-b border-black pb-2 text-xl">Contact</h2>

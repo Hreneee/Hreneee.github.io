@@ -175,7 +175,7 @@ export default function Skills() {
     <motion.div
       initial={reduceMotion ? false : { opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
-      className="flex min-h-full flex-col space-y-12 pb-0"
+      className="flex min-h-full max-w-[1280px] flex-col space-y-12 pb-0"
     >
       <div>
         <h2 className="mb-8 inline-block border-b border-black pb-2 text-xl">Skills</h2>

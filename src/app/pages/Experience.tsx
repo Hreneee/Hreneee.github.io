@@ -142,7 +142,7 @@ export default function Experience() {
     <motion.div
       initial={reduceMotion ? false : { opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
-      className="space-y-12 pb-24"
+      className="max-w-6xl space-y-12 pb-24"
     >
       <h2 className="inline-block border-b border-black pb-2 text-xl">Experience</h2>
 
