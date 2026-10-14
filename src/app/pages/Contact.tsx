@@ -2,7 +2,7 @@ import { motion, useReducedMotion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 
 const contactLinks = [
-  { label: "Email", href: "mailto:irene.huang.227q@gmail.com", color: "hover:text-primary" },
+  { label: "Email", href: "mailto:irene.huang.xt@gmail.com", color: "hover:text-primary" },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/i-huang/", color: "hover:text-secondary" },
   { label: "GitHub", href: "https://github.com/Hreneee", color: "hover:text-primary" },
   {
