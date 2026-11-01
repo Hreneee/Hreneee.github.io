@@ -119,7 +119,7 @@ export default function Projects() {
           Text-Informed Nutrition Prioritization for West Africa
         </h3>
 
-        <div className="space-y-6 text-neutral-800">
+        <div className="space-y-6 text-neutral-700">
           <p>
             While conducting my{" "}
             <a href="#/experience" className="border-b border-black transition-colors hover:text-primary">

@@ -49,7 +49,7 @@ export default function Contact() {
 
       <section className="relative space-y-6 overflow-hidden border border-black bg-neutral-50 p-8">
         <h3 className="font-serif text-lg">Artificial Intelligence (AI) Usage</h3>
-        <p className="text-neutral-600">
+        <p className="text-neutral-700">
           This website was designed and written by me, with AI-assisted development used for coding, debugging, and implementation.
         </p>
       </section>

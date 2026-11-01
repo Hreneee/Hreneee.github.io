@@ -22,7 +22,7 @@ const skillCategories = [
   },
   {
     title: "Tools",
-    skills: "Excel/Sheets, Jupyter Notebook, VBA, OpenSolver, LaTeX, Git, VS Code,",
+    skills: "Excel/Sheets, Jupyter Notebook, VBA, OpenSolver, LaTeX, Git, VS Code",
   },
 ];
 
@@ -184,7 +184,7 @@ export default function Skills() {
           {skillCategories.map((cat) => (
             <div
               key={cat.title}
-              className="grid grid-cols-1 gap-2 border-b border-neutral-200 pb-4 text-neutral-800 last:border-0 md:grid-cols-4 md:gap-4"
+              className="grid grid-cols-1 gap-2 border-b border-neutral-200 pb-4 text-neutral-700 last:border-0 md:grid-cols-4 md:gap-4"
             >
               <h3 className="col-span-1 font-serif text-xl italic text-black">{cat.title}</h3>
               <p className="col-span-3">{cat.skills}</p>
