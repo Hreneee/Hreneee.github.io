@@ -5,12 +5,12 @@ const skillCategories = [
   {
     title: "Programming",
     skills:
-      "Python (Pandas, NumPy, scikit-learn, Matplotlib, PyTorch), R, SQL, Java, JavaScript, TypeScript, C",
+      "Python (pandas, NumPy, scikit-learn, Matplotlib, PyTorch), R, SQL, VBA, Java, JavaScript, TypeScript, C",
   },
   {
     title: "Quantitative Methods",
     skills:
-      "Optimization, data envelopment analysis, multi-criteria decision analysis, clustering, regression, time-series analysis, hypothesis testing, model validation",
+      "Mathematical optimization, data envelopment analysis (DEA), multi-criteria decision analysis (MCDA, including TOPSIS), hierarchical clustering, regression, time-series analysis, hypothesis testing, model validation",
   },
   {
     title: "Web Development",
@@ -18,11 +18,11 @@ const skillCategories = [
   },
   {
     title: "Databases",
-    skills: "MySQL, PostgreSQL, NoSQL, MongoDB",
+    skills: "MySQL, PostgreSQL, MongoDB",
   },
   {
     title: "Tools",
-    skills: "Excel/Sheets, Jupyter Notebook, VBA, OpenSolver, LaTeX, Git, VS Code",
+    skills: "Excel (Solver, OpenSolver), Google Sheets, Jupyter Notebook, LaTeX, Git, VS Code",
   },
 ];
 

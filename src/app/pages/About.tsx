@@ -14,10 +14,10 @@ export default function About() {
       <div className="grid max-w-[1280px] items-start gap-10 md:grid-cols-[minmax(0,1fr)_20rem] lg:grid-cols-[minmax(0,1fr)_22rem] lg:gap-16">
         <div className="space-y-6 text-[1.08rem] text-neutral-700 md:pt-2">
           <p>
-            I am a graduate student with a background in computer science and business, interested in using quantitative methods to support decision-making in energy systems. My research interests include optimization and multi-criteria decision analysis applied to power systems, renewable energy transitions, and infrastructure planning, particularly around access, investment, and resource allocation.
+            I am a graduate student with a background in computer science and business. I am interested in how electricity systems can integrate renewable generation and storage reliably and affordably. My research interests include electricity market design and co-optimized dispatch, with a focus on stochastic optimization for storage dispatch under renewable generation and demand uncertainty.
           </p>
           <p>
-            I am interested in developing methods that help decision-makers evaluate trade-offs and design energy systems that are efficient, reliable, and sustainable. I am also exploring emerging computational approaches, including quantum optimization, and their potential applications to complex energy problems.
+            I am also interested in how policy shapes the implementation of market designs, particularly where local priorities and regulatory constraints impede renewable and storage projects.
           </p>
         </div>
 

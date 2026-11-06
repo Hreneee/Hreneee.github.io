@@ -59,11 +59,15 @@ export default function Projects() {
 
   const goToFigure = (index: number) => {
     const nextIndex = Math.min(Math.max(index, 0), projectFigures.length - 1);
+    const gallery = galleryRef.current;
+    const card = cardRefs.current[nextIndex];
+
     setActiveFigure(nextIndex);
-    cardRefs.current[nextIndex]?.scrollIntoView({
+    if (!gallery || !card) return;
+
+    gallery.scrollTo({
+      left: card.offsetLeft - gallery.offsetLeft,
       behavior: reduceMotion ? "auto" : "smooth",
-      block: "nearest",
-      inline: "start",
     });
   };
 
@@ -112,7 +116,7 @@ export default function Projects() {
     >
       <h2 className="inline-block border-b border-black pb-2 text-xl">Selected Projects</h2>
 
-      <article className="group relative overflow-hidden">
+      <article className="group relative min-w-0 max-w-full overflow-hidden">
         <div className="absolute left-0 top-0 h-1 w-full origin-left scale-x-0 bg-secondary transition-transform duration-500 ease-out group-hover:scale-x-100" />
 
         <h3 className="mb-6 mt-4 font-serif text-2xl italic">
@@ -156,7 +160,7 @@ export default function Projects() {
           ))}
         </div>
 
-        <section className="mt-10" aria-label="Project charts">
+        <section className="mt-10 min-w-0 max-w-full" aria-label="Project charts">
           <div className="mb-4 flex items-center justify-between gap-6">
             <h4 className="font-serif text-xl italic">Research Figures</h4>
             <GalleryControls activeFigure={activeFigure} goToFigure={goToFigure} desktop />
@@ -169,7 +173,7 @@ export default function Projects() {
               if (event.key === "ArrowLeft") goToFigure(activeFigure - 1);
               if (event.key === "ArrowRight") goToFigure(activeFigure + 1);
             }}
-            className="no-scrollbar flex snap-x snap-mandatory gap-4 overflow-x-auto pb-2"
+            className="no-scrollbar flex max-w-full snap-x snap-mandatory gap-4 overflow-x-auto overscroll-x-contain pb-2"
             tabIndex={0}
             aria-label="Project charts. Use the left and right arrow keys to navigate."
           >
