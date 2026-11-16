@@ -4,7 +4,7 @@ import { ArrowLeft, ArrowRight, ArrowUpRight, Expand, X } from "lucide-react";
 
 const projectLinks = [
   { label: "Dashboard", href: "https://west-africa-nutrition-ranking-dashb.vercel.app/" },
-  { label: "Writeup", href: "/documents/text-informed-nutritional-prioritization-west-africa.docx" },
+  { label: "Writeup", href: "/documents/multi-criteria-decision-analysis-for-nutrition-prioritization-in-west-africa.docx" },
   { label: "GitHub", href: "https://github.com/Hreneee/west-africa-nutrition-ranking" },
 ];
 
