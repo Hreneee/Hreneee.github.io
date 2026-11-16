@@ -120,7 +120,7 @@ export default function Projects() {
         <div className="absolute left-0 top-0 h-1 w-full origin-left scale-x-0 bg-secondary transition-transform duration-500 ease-out group-hover:scale-x-100" />
 
         <h3 className="mb-6 mt-4 font-serif text-2xl italic">
-          Text-Informed Nutrition Prioritization for West Africa
+          Multi-Criteria Decision Analysis for Nutrition Prioritization in West Africa
         </h3>
 
         <div className="space-y-6 text-neutral-700">
